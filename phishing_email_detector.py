@@ -14,16 +14,20 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
-
-subject = input().lower()
-if ("urgent" in subject) or ("immediate action required" in subject):
+subject = input("Enter the email subject line: ")
+subject_lower = subject.lower()
+print()
+print("SECURITY ASSESSMENT:")
+if ("urgent" in subject_lower) or ("immediate action required" in subject):
     print("HIGH RISK: Possible phishing attempt.")
-elif ("win" in subject) or ("free" in subject):
+elif ("win" in subject_lower) or ("free" in subject):
     print("MEDIUM RISK: Suspicious offer detected.")
-elif "password reset" in subject:
+elif "password reset" in subject_lower:
     print("LOW RISK: Verify legitimacy with sender.")
 else:
     print("No phishing indicators detected.")
+print("----------------------------")
+print(f'Analyzed subject: "{subject}"')
 ########### END YER CODE ABOVE THIS LINE ###########
 
     

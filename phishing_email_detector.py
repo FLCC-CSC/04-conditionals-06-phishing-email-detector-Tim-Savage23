@@ -15,7 +15,7 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
-subject = subject.lower()
+subject = input().lower()
 if ("urgent" in subject) or ("immediate action required" in subject):
     print("HIGH RISK: Possible phishing attempt.")
 elif ("win" in subject) or ("free" in subject):

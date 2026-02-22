@@ -26,8 +26,6 @@ elif "password reset" in subject:
     print("LOW RISK: Verify legitimacy with sender.")
 else:
     print("No phishing indicators detected.")
-print("----------------------------")
-print(f'Analyzed subject: "{subject}"')
 ########### END YER CODE ABOVE THIS LINE ###########
 
     

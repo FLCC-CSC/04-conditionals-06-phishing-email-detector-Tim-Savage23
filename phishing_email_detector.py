@@ -1,8 +1,8 @@
 # FILE NAME - phishing_email_detector.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Tim Savage
+# DATE: February, 22, 2026
+# BRIEF DESCRIPTION: Phising email detector.
 
 
 
@@ -14,16 +14,20 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
+subject = input("Enter the email subject line: ")
 
-
-
-
-
-
-
-
-
-
+print()
+print("SECURITY ASSESSMENT:")
+if ("urgent" in subject.lower()) or ("immediate action required" in subject):
+    print("HIGH RISK: Possible phishing attempt.")
+elif ("win" in subject.lower()) or ("free" in subject):
+    print("MEDIUM RISK: Suspicious offer detected.")
+elif "password reset" in subject.lower()):
+    print("LOW RISK: Verify legitimacy with sender.")
+else:
+    print("No phishing indicators detected.")
+print("--------------------")
+print(f'Analyzed subject: "{subject}"')
 ########### END YER CODE ABOVE THIS LINE ###########
 
     
@@ -78,7 +82,7 @@ Analyzed subject: "Did you request a password reset?"
 
 1. Was using `in` difficult or was it natural?
 
-
+I think using 'in' was actually pretty natural. It was easier to understand while writing the code what exactly it meant.
 
 
 

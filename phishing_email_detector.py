@@ -14,7 +14,7 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
-subject = input("Enter the email subject line: ")
+
 subject = subject.lower()
 if ("urgent" in subject) or ("immediate action required" in subject):
     print("HIGH RISK: Possible phishing attempt.")
